@@ -1,7 +1,6 @@
 import "./styles.css";
 import DocViewer, { DocViewerRenderers } from "react-doc-viewer";
-import xlsxFile from "./test-excelaki.xlsx";
-import docxFile from "./test-doc.docx";
+
 export default function App() {
   const docs = [
     // {
@@ -15,8 +14,8 @@ export default function App() {
     //   uri:
     //     "https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf"
     // },
-    { uri: xlsxFile },
-    { uri: docxFile }
+    { uri: require("./test-excelaki.xlsx") },
+    { uri: require("./test-doc.docx") }
   ];
   return (
     <div className="App">
